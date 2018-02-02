@@ -1,3 +1,16 @@
+<?php
+if (!empty($_GET['lng'])) {
+    $_COOKIE['language'] = $_GET['lng'] === 'es' ? 'es' : 'ca';
+} elseif (empty($_COOKIE['language'])) {
+    $_COOKIE['language'] = 'es';
+}
+setcookie('language', $_COOKIE['language']);
+if ($_COOKIE['language'] == 'es') {
+    include('lang-es.php');
+} else {
+    include('lang-ca.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -123,18 +136,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <img class="img-brand" src="webroot/img/logoinfocam3.png" alt="logo infocam"/>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav ">
-          <li><a href="index.html#top">HOME</a></li>
-          <li><a href="index.html#empresa">EMPRESA</a></li>
-          <li><a href="index.html#servicios"><?php echo SERVICIOS; ?></a></li>
-          <li><a href="index.html#map"><?php echo LOCALIZACION; ?></a></li>
-          <li><a href="index.html#contacto">CONTACTAR</a></li>
-          <li><a href="descargas.html"><?php echo DESCARGAS; ?></a></li>
+          <li><a href="index.php#top">HOME</a></li>
+          <li><a href="index.php#empresa">EMPRESA</a></li>
+          <li><a href="index.php#servicios"><?php echo SERVICIOS; ?></a></li>
+          <li><a href="index.php#map"><?php echo LOCALIZACION; ?></a></li>
+          <li><a href="index.php#contacto">CONTACTAR</a></li>
+          <li><a href="descargas.php"><?php echo DESCARGAS; ?></a></li>
         </ul>
       </div>
     </div>
@@ -309,7 +322,7 @@
     <div class="container-fluid">
       <div class="row m-top-15">
         <div class="col-md-3">
-          <img src="webroot/img/logoepic.png" class="img-responsive" alt="logo epic" />
+          <img src="webroot/img/logoepic2.png" class="img-responsive" alt="logo epic" />
         </div>
         <div class="col-md-3">
           <h4>Infocam Consulting</h4>

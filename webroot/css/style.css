@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Lato|Quicksand|VT323');
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Bungee+Inline|Fauna+One');
 html, body {
   margin: 0;
   height: 100%;
@@ -75,7 +76,6 @@ html, body {
 }
 
 /* FLECHA BACK-TO-TOP */
-
 .back-to-top {
   display: none;
   width: 50px;
@@ -101,60 +101,58 @@ html, body {
 }
 
 /* HEADER PAGINA (iconas: telefono, mail, localizacion) */
-
 .call {
   padding-bottom: 12px;
-  height: 110px;
   border-top: 11px solid rgb(61, 58, 58);
 }
+.glyphicon.glyphicon-phone-alt, .glyphicon.glyphicon-envelope, .glyphicon.glyphicon-map-marker {
+  font-size: 33px;  
+  color: rgb(255, 255, 255);
+}
 
- .glyphicon.glyphicon-phone-alt, .glyphicon.glyphicon-envelope, .glyphicon.glyphicon-map-marker {
-  font-size: 33px;
-  padding-left: 13px;
-  padding-top: 10px;
-  color: rgb(106, 106, 106);
+.glyphicon.glyphicon-phone-alt {
+  padding-top: 12px;
+}
+
+.glyphicon.glyphicon-envelope {
+  padding-top: 14px;
+}
+
+.glyphicon.glyphicon-map-marker {
+  padding-top: 14px;
 }
 
 .circle {
+  display: inline-block;
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  border: 2px solid rgb(203, 203, 203);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #5ABB00;
 }
-
 .header-text {
-  margin-left: 12px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  color: rgb(106, 106, 106);
+  display: inline-block;
+  font-family: 'Aldrich', sans-serif;
 }
-
 .header-text .title {
-  line-height: 10px;
-  font-family: 'VT323', monospace;
-  color: rgb(11, 11, 11);
+  font-weight: bolder;
+  color: black;
+  text-align: left;
+  margin-bottom: 0 !important;
 }
-
+.header-text .subtitle {
+  font-weight: 400;
+  color: #858585;
+  text-align: left;
+  margin-top: 0px !important;
+}
 /* iconas del header responsive */
-
 @media (max-width:995px) {
-  .circle {
-    width: 45px;
-    height: 45px;
+  #responsive-header {
+    font-size: 12px;
   }
-  .glyphicon.glyphicon-phone-alt, .glyphicon.glyphicon-envelope, .glyphicon.glyphicon-map-marker {
-    font-size: 23px;
-    padding-left: 9px;
-    padding-top: 6px;
-  }
-  .header-text h4 {
-    margin-left: 12px;
-    font-size: 16px;
-  }
-  .header-text .title {
-    line-height: 8px;
-    font-family: "VT323", monospace;
-    color: rgb(11, 11, 11);
+  #responsive-header2 {
+    padding-right: 50px;
   }
 }
 
@@ -295,22 +293,6 @@ html, body {
   }
 }
 
-/*@media (max-width:930px) {
-  .navbar-nav li a {
-    font-size: 80%;
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-}
-
-@media (max-width:771px) {
-  .navbar-nav li a {
-    font-size: 80%;
-    padding-left: 0.3vw;
-    padding-right: 0.3vw;
-  }
-}*/
-
 @media (max-width: 768px) {
   .navbar .navbar-collapse.in {
     background-color: #222;
@@ -324,15 +306,14 @@ html, body {
 }
 
 /* FOOTER */
-
 footer {
   background-color: #222;
-  padding: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 footer img {
-  max-width: 290px;
-  max-height: 107px;
+  width: 250px;
 }
 
 footer h4 {
@@ -360,7 +341,7 @@ footer p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 365px;
+  height: 400px;
 }
 
 .section-1 h1 {
@@ -368,17 +349,16 @@ footer p {
   font-weight: 900;
   font-size: 50px;
   color: white;
-  float: left;
   border-bottom: 2px solid rgb(135, 223, 64);
+  float: left;
+  margin-left: 25px;
 }
 
-.section-1 p {
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
+.section-1 h4 {
   float: left;
 }
 
+/* END SECTION 1 */
 .section-2 {
   margin-top: 25px;
   margin-bottom: 45px;

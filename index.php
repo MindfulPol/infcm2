@@ -22,113 +22,68 @@ if ($_COOKIE['language'] == 'es') {
   <title>Infocam Consulting Informàtic</title>
   <meta name="description" content="Infocam Consulting es una empresa dedicada a ofrecer
   servicios informáticos para empresas y particulares">
-
-  <link rel="stylesheet" href="webroot/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" href="webroot/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="webroot/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="webroot/css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="webroot/css/style.css" />
 
   <script src="webroot/js/jquery.min.js"></script>
   <script src="webroot/js/owl.carousel.min.js"></script>
-  <script src="webroot/js/bootstrap.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="webroot/js/custom.js"></script>
-
+  <script src="webroot/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body id="top">
-
+  <!-- ICONES_TELF-MISG-MARK -->
   <header>
-    <div class="call hidden-md hidden-lg hidden-sm">
-      <div class="container">
+    <div class="call">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-offset-11 col-md-1">
             <a href="index.php?lng=ca"><img src="webroot/img/flag_ca.png"/></a>
             <a href="index.php?lng=es"><img src="webroot/img/flag_esp.jpg"/></a>
           </div>
-        </div>
-        <div class="row">
-          <a href="#contacto">
-            <div class="col-xs-2">
-              <div>
-                <i class="glyphicon glyphicon-phone-alt"></i>
+          <div id="responsive-header2" class="col-xs-12 col-sm-4 text-center">
+            <a href="#contacto">
+              <div class="circle">
+                <span class="glyphicon glyphicon-phone-alt"></span>
               </div>
-            </div>
-            <div class="col-xs-6">
-              <h5 class="responsive-text">977 63 90 76</h5>
-            </div>
-          </a>
-        </div>
-        <div class="row">
-          <a href="#contacto">
-            <div class="col-xs-2">
-              <i class="glyphicon glyphicon-envelope"></i>
-            </div>
-            <div class="col-xs-6">
-              <h5 class="responsive-text">infocam@consulting.com</h5>
-            </div>
-          </a>
+              <div class="header-text">
+                <h4 class="title"><?php echo PREGUNTA_DUDAS; ?></h4>
+                <h4 class="subtitle">977639076</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-center">
+            <a href="#contacto">
+              <div class="circle">
+                <span class="glyphicon glyphicon-envelope"></span>
+              </div>
+              <div class="header-text">
+                <h4 class="title"><?php echo CUENTENOS_SU_PROYECTO; ?></h4>
+                <h4 id="responsive-header" class="subtitle">infocam@consulting.com</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-center">
+            <a href="#map">
+              <div class="circle">
+                <span class="glyphicon glyphicon-map-marker"></span>
+              </div>
+              <div class="header-text">
+                <h4 class="title"><?php echo LOCALIZACION_OFICINA; ?> </h4>
+                <h4 class="subtitle">Vila-rodona</h4>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="call hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-11 col-md-1">
-            <a href="index.php?lng=ca"><img src="webroot/img/flag_ca.png"/></a>
-            <a href="index.php?lng=es"><img src="webroot/img/flag_esp.jpg"/></a>
-          </div>
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="row">
-                <a href="#contacto">
-                  <div class="col-xs-2">
-                    <div class="circle">
-                      <i class="glyphicon glyphicon-phone-alt"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6  header-text">
-                    <h4 class="title"><?php echo PREGUNTA_DUDAS; ?></h4>
-                    <h4>977 63 90 76</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="row">
-                <a href="#contacto">
-                  <div class="col-xs-2">
-                    <div class="circle">
-                      <i class="glyphicon glyphicon-envelope"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 header-text">
-                    <h4 class="title"><?php echo CUENTENOS_SU_PROYECTO; ?></h4>
-                    <h4>infocam@consulting.com</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="row">
-                <a href="#map">
-                  <div class="col-xs-2">
-                    <div class="circle">
-                      <i class="glyphicon glyphicon-map-marker"></i>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 header-text">
-                    <h4 class="title"><?php echo LOCALIZACION_OFICINA; ?></h4>
-                    <h4>Vila-rodona</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
   </header>
-
+  <!-- END ICONES_TELF-MISG-MARK -->
+  <!-- BARRA NAVEGACIÓ -->
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -137,7 +92,6 @@ if ($_COOKIE['language'] == 'es') {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- a classe trapezoid i img classe img -->
         <a class="navbar-brand" href="index.php">
           <img class="img-brand" src="webroot/img/logoinfocam3.png" alt="logo infocam"/>
         </a>
@@ -154,19 +108,21 @@ if ($_COOKIE['language'] == 'es') {
       </div>
     </div>
   </nav>
-  <!-- SECTION 1 -->
+  <!-- END BARRA NAVEGACIÓ -->
+  <!-- SECCIÓ IMATGE DE FONS -->
   <section class="section-1">
     <div class="container">
       <div class="row">
         <div class="col-md-12 m-top-35">
-          <h1>INFOCAM CONSULTING INFORMÀTIC</h1>
-          <p>
+          <h1>INFOCAM</h1>
+          <h4>
             <?php  echo EMPRESA_VALLS; ?>
-          </p>
+          </h4>
         </div>
       </div>
     </div>
   </section>
+  <!-- END SECCIÓ IMATGE DE FONS -->
   <section class="m-top-45" id="empresa">
     <div class="container content-empresa">
       <div class="row">
@@ -176,28 +132,31 @@ if ($_COOKIE['language'] == 'es') {
             <?php echo INFOCAM_CONSULTING_INTRO; ?>
           </p>
         </div>
+        <div class="col-md-offset-4 col-md-4">
+          <img src="webroot/img/logoepic2.png" class="img-responsive" alt="logo grup epic">
+        </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <h4 class="hideme"><?php echo LA_EMPRESA; ?></h4>
-          <p class="hideme">
+          <h4><?php echo LA_EMPRESA; ?></h4>
+          <p>
             <?php echo ABOUT_EMPRESA; ?>
           </p>
-          <img src="webroot/img/empresa.jpg" class="img-responsive center-block hideme" alt="logo epic" />
+          <img src="webroot/img/empresa.jpg" class="img-responsive center-block" alt="logo epic" />
         </div>
         <div class="col-md-4">
-          <h4 class="hideme"><?php echo EL_EQUIPO; ?></h4>
-          <p class="hideme">
+          <h4><?php echo EL_EQUIPO; ?></h4>
+          <p>
             <?php echo ABOUT_EQUIPO; ?>
           </p>
-          <img src="webroot/img/equipo.jpg" class="m-top-30 img-responsive center-block hideme" alt="logo epic" />
+          <img src="webroot/img/equipo.jpg" class="m-top-30 img-responsive center-block" alt="logo epic" />
         </div>
         <div class="col-md-4">
-          <h4 class="hideme"><?php echo LA_EXPERIENCIA; ?></h4>
-          <p class="hideme">
+          <h4><?php echo LA_EXPERIENCIA; ?></h4>
+          <p>
             <?php echo ABOUT_EXPERIENCIA; ?>
           </p>
-          <img src="webroot/img/grup_epic.gif" class="m-top-80 img-responsive center-block hideme" alt="logo epic" />
+          <img src="webroot/img/redesa.jpg" class="m-top-80 img-responsive center-block" alt="logo epic" />
         </div>
       </div>
     </div>
@@ -207,12 +166,11 @@ if ($_COOKIE['language'] == 'es') {
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="hideme"><?php echo SOLUCIONAMOS; ?></h3>
-          <p class="hideme">
+          <h3><?php echo SOLUCIONAMOS; ?></h3>
+          <p>
             <?php echo ABOUT_SOLUCIONAMOS_1; ?>
-
           </p>
-          <p class="hideme">
+          <p>
             <?php echo ABOUT_SOLUCIONAMOS_2; ?>
           </p>
         </div>
@@ -224,7 +182,7 @@ if ($_COOKIE['language'] == 'es') {
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="hideme"><?php echo QUE_SERVICIOS; ?></h2>
+          <h2><?php echo QUE_SERVICIOS; ?></h2>
         </div>
       </div>
       <!-- m-left-15 aki baix -->
@@ -232,19 +190,19 @@ if ($_COOKIE['language'] == 'es') {
         <div class="col-md-4 text-center fr">
           <a class="service-links" href="servicios.php#soporte">
             <i class="glyphicon glyphicon-cog"></i>
-            <h4 class="hideme"><?php echo SOPORTE_INFORMATICO; ?></h4>
+            <h4><?php echo SOPORTE_INFORMATICO; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#redes">
             <i class="glyphicon glyphicon-tasks"></i>
-            <h4 class="hideme"><?php echo ADMINISTRACION_SISTEMAS; ?></h4>
+            <h4><?php echo ADMINISTRACION_SISTEMAS; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#lopd">
             <i class="glyphicon glyphicon-lock"></i>
-            <h4 class="hideme"><?php echo DOCUMENTO_SEGURIDAD; ?></h4>
+            <h4><?php echo DOCUMENTO_SEGURIDAD; ?></h4>
           </a>
         </div>
       </div>
@@ -252,19 +210,19 @@ if ($_COOKIE['language'] == 'es') {
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#software">
             <i class="glyphicon glyphicon-save-file"></i>
-            <h4 class="hideme"><?php echo IMPLANTACION_SOFTWARE; ?></h4>
+            <h4><?php echo IMPLANTACION_SOFTWARE; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#alojamientos">
             <i class="glyphicon glyphicon-inbox"></i>
-            <h4 class="hideme"><?php echo ALOJAMIENTOS; ?></h4>
+            <h4><?php echo ALOJAMIENTOS; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#hardware">
             <i class="glyphicon glyphicon-print"></i>
-            <h4 class="hideme"><?php echo VENTA_HARDWARE; ?></h4>
+            <h4><?php echo VENTA_HARDWARE; ?></h4>
           </a>
         </div>
       </div>
@@ -272,19 +230,19 @@ if ($_COOKIE['language'] == 'es') {
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#cloud">
             <i class="glyphicon glyphicon-cloud"></i>
-            <h4 class="hideme"><?php echo SERVICIOS_CLOUD; ?></h4>
+            <h4><?php echo SERVICIOS_CLOUD; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#recuperacio">
             <i class="glyphicon glyphicon-download-alt"></i>
-            <h4 class="hideme"><?php echo RECUPERACION_DATOS; ?></h4>
+            <h4><?php echo RECUPERACION_DATOS; ?></h4>
           </a>
         </div>
         <div class="col-md-4 text-center">
           <a class="service-links" href="servicios.php#auditories">
             <i class="glyphicon glyphicon-list-alt"></i>
-            <h4 class="hideme"><?php echo AUDITORIAS; ?></h4>
+            <h4><?php echo AUDITORIAS; ?></h4>
           </a>
         </div>
       </div>
@@ -292,7 +250,7 @@ if ($_COOKIE['language'] == 'es') {
         <div class="col-md-offset-4 col-md-4 text-center">
           <a class="service-links" href="servicios.php#telefonia">
             <i class="glyphicon glyphicon-signal"></i>
-            <h4 class="hideme"><?php echo TELEFONIA; ?></h4>
+            <h4><?php echo TELEFONIA; ?></h4>
           </a>
         </div>
       </div>
@@ -305,7 +263,7 @@ if ($_COOKIE['language'] == 'es') {
           <h2><?php echo TRABAJAMOS_CON; ?></h2>
           <div id="carousel-section" class="owl-carousel owl-theme">
             <div class="item">
-              <img src="webroot/img/grup_epic2.jpg" alt="epic" />
+              <img src="webroot/img/logoepic2.png" alt="epic" />
             </div>
             <div class="item">
               <img style="margin-top: 48px" src="webroot/img/kaspersky.png" alt="kaspersky" />
@@ -347,15 +305,15 @@ if ($_COOKIE['language'] == 'es') {
     <div class="container">
       <div class="row m-bottom-15">
         <div class="col-md-offset-2 col-md-8 m-top-15">
-          <h4 class="hideme"><?php echo NOS_ENCONTRARAS; ?></h4>
-          <p class="hideme">
+          <h4><?php echo NOS_ENCONTRARAS; ?></h4>
+          <p>
             Infocam Consulting Informàtic | C/ Doctor Ferrer Nº6 Baixos | (43814) Vila-rodona (Tarragona)
           </p>
         </div>
       </div>
     </div>
     <div class="container-fluid">
-      <div class="row hideme">
+      <div class="row">
         <div id="map">
         </div>
       </div>
@@ -365,34 +323,34 @@ if ($_COOKIE['language'] == 'es') {
     <div class="container contacto">
       <div class="row">
         <div class="col-md-12 center-block">
-          <h4 class="hideme"><?php echo PONGANSE_EN_CONTACTO; ?></h4>
-          <p class="omg hideme">
+          <h4><?php echo PONGANSE_EN_CONTACTO; ?></h4>
+          <p class="omg">
             infocam@infocamconsulting.com
           </p>
-          <p class="omg hideme">
+          <p class="omg">
             <strong>Tel.</strong> 977 63 90 · <strong>Fax.</strong> 977 63 80 73 · <strong>
                 <?php echo MOVILES; ?></strong> 637 49 15 00 · 619 43 08 80
           </p>
           <form method="post" action="mail.php">
-            <label class="hideme"><?php echo NOMBRE_APELLIDOS; ?></label>
-            <input type="text" class="form-control hideme" name="nombre" />
+            <label><?php echo NOMBRE_APELLIDOS; ?></label>
+            <input type="text" class="form-control" name="nombre" />
             <label>Empresa</label>
-            <input type="text" class="form-control hideme" name="empresa" />
+            <input type="text" class="form-control" name="empresa" />
             <label>E-mail</label>
-            <input type="text" class="form-control hideme" name="email" />
+            <input type="text" class="form-control" name="email" />
             <label><?php echo TELEFONO; ?></label>
-            <input type="number" class="form-control hideme" name="tel" />
+            <input type="number" class="form-control" name="tel" />
             <label>Web</label>
-            <input type="text" class="form-control hideme" name="web" />
+            <input type="text" class="form-control" name="web" />
             <label><?php echo MENSAJE; ?></label>
-            <textarea name="mensaje" class="form-control hideme"></textarea>
-            <!-- google recaptchav2 va aqui -->
+            <textarea name="mensaje" class="form-control"></textarea>
+            <!-- google recaptchav2 -->
             <div class="m-top-5">
               <div class="g-recaptcha" data-sitekey="6LcEyT8UAAAAAExFpqC2GsMzfYQ2C6LEADKxQkrv"></div>
             </div>
-            <button type="submit" name="submit" class="btn btn-success hideme">Enviar</button>
+            <button type="submit" name="submit" class="btn btn-success">Enviar</button>
           </form>
-          <p class="casi-nadie-lo-lee-lol m-bottom-25 hideme">
+          <p class="casi-nadie-lo-lee-lol m-bottom-25">
             <?php echo CONDICIONES_FORM; ?>
           </p>
         </div>
@@ -403,7 +361,7 @@ if ($_COOKIE['language'] == 'es') {
     <div class="container-fluid">
       <div class="row m-top-15">
         <div class="col-md-3">
-          <img src="webroot/img/logoepic.png" class="img-responsive" alt="logo epic" />
+          <img src="webroot/img/logoepic2.png"  alt="logo epic" />
         </div>
         <div class="col-md-3">
           <h4>Infocam Consulting</h4>
@@ -417,7 +375,7 @@ if ($_COOKIE['language'] == 'es') {
         <div class="col-md-3">
           <h4><?php echo TRABAJAMOS_CON ?></h4>
           <div id="carousel-footer" class="owl-carousel owl-theme">
-            <img class="item" style="width:90px" src="webroot/img/grup_epic2.jpg" alt="epic" />
+            <img class="item" style="width:90px" src="webroot/img/logoepic2.png" alt="epic" />
             <img class="item" style="width:90px" src="webroot/img/kaspersky.png" alt="kaspersky" />
             <img class="item" style="width:90px" src="webroot/img/asus.jpg" alt="asus" />
             <img class="item" style="width:90px" src="webroot/img/epson.png" alt="epson" />

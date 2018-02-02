@@ -28,11 +28,6 @@ $(document).ready(function() {
     autoplayHoverPause: true,
     dots: false
   });
-  // divs expandibles de servicios.html
-  // $(".expand-info").click(function() {
-  //   //mostrar contenido del servicio seleccionado
-  //   mostrarServicio($(this).data('show'));
-  // });
   // // abrir div de servicios.html según paranetro de la url
   var url = window.location.href;
   var site = url.split("/");
@@ -43,8 +38,8 @@ $(document).ready(function() {
       var nombreServicio = window.location.hash.substr(1);
       $('#'+nombreServicio).addClass('in');
     }
-  } else if(site[site.length - 1].includes('index')) {
-    // add sticky navbar
+  } else { 
+    // add sticky navbar solo en index.php
     $(window).bind('scroll', function() {
       if ($(window).scrollTop() > 111) {
         $('.navbar').addClass('sticky-nav');
@@ -64,35 +59,13 @@ $(document).ready(function() {
         }, 1000);
       }
     });
-    // hide things maybe worthless af
-    $(window).scroll(function() {
-      $('.hideme').each(function(i) {
-        var element = $(this).offset().top + $(this).outerHeight();
-        var screenHeight = $(window).scrollTop() + $(window).height();
-        // si elemento es visibli mostrar-lo
-        if (screenHeight > element) {
-          $(this).animate({
-            'opacity': '1'
-          }, 666);
-        }
-      });
-    });
   }
-  // Amagar navbar responsive
+  // Amagar links del navbar responsive expanded quan fem click a un d'ells
   $(document).on('click', '.navbar-collapse.in', function(e) {
     if ($(e.target).is('a')) {
       $(this).collapse('hide');
     }
   });
-  // si entramos a la web desde descargas en /empresa/contactos/servicios
-  // mostramos elementos directamente sin necessidad d'scroll por parte del usuario
-  if ($(window).scrollTop() > 271) {
-    $('.hideme').each(function() {
-      $(this).animate({
-        'opacity': '1'
-      }, 250);
-    });
-  }
   // añadir flecha back-to-top
   //flecha back-to-top
   $('#back-to-top').click(function(event) {

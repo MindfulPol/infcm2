@@ -1,3 +1,16 @@
+<?php
+if (!empty($_GET['lng'])) {
+    $_COOKIE['language'] = $_GET['lng'] === 'es' ? 'es' : 'ca';
+} elseif (empty($_COOKIE['language'])) {
+      $_COOKIE['language'] = 'es';
+}
+setcookie('language', $_COOKIE['language']);
+if ($_COOKIE['language'] == 'es') {
+    include('lang-es.php');
+} else {
+    include('lang-ca.php');
+}
+?>
 <!doctype html>
 <html lang="es">
 
@@ -205,7 +218,7 @@
     <div class="container-fluid">
       <div class="row m-top-15">
         <div class="col-md-3">
-          <img src="webroot/img/logoepic.png" class="img-responsive" alt="logo epic" />
+          <img src="webroot/img/logoepic2.png" class="img-responsive" alt="logo epic" />
         </div>
         <div class="col-md-3">
           <h4>Infocam Consulting</h4>
